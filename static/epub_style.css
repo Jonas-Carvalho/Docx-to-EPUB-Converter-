@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Configuração Geral do Corpo e Tipografia Fluida
+   ========================================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.6;
+    word-break: normal;
+    overflow-wrap: break-word;
+    widows: 2;
+    orphans: 2;
+}
+
+/* ==========================================================================
+   Justificação e Hifenização Reforçadas
+   ========================================================================== */
+body, div, p, blockquote {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+
+    /* Motores de hifenização para Kindle, Apple Books, Kobo e Calibre */
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+    -epub-hyphens: auto !important;
+    hyphens: auto !important;
+
+    /* Regras de corte silábico: mín. 5 letras por palavra, 2 antes e 2 após o hífen */
+    -webkit-hyphenate-limit-before: 2;
+    -webkit-hyphenate-limit-after: 2;
+    -webkit-hyphenate-limit-chars: 5 2 2;
+    hyphenate-limit-chars: 5 2 2;
+}
+
+/* ==========================================================================
+   Parágrafos (Normal do Word com espaçamento vertical)
+   ========================================================================== */
+p {
+    margin-top: 0 !important;
+    margin-bottom: 0.85em !important;
+    text-indent: 0 !important;
+}
+
+/* ==========================================================================
+   Títulos e Hierarquia (Não hifenizar títulos)
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
+    -ms-hyphens: none !important;
+    -epub-hyphens: none !important;
+    hyphens: none !important;
+}
+
+/* Title: Título Principal da Obra */
+h1.title {
+    font-size: 2em;
+    text-align: center !important;
+    margin: 3em 0 0.5em 0;
+    page-break-before: always;
+    break-before: page;
+    text-indent: 0 !important;
+}
+
+/* Subtitle: Subtítulo / Nome do Autor */
+p.subtitle {
+    font-size: 1.2em;
+    text-align: center !important;
+    font-style: italic;
+    color: #444;
+    margin: 0 0 3em 0 !important;
+    text-indent: 0 !important;
+}
+
+/* Heading: Capítulos Principais (Heading 1 do Word) */
+h1:not(.title) {
+    font-size: 1.4em;
+    text-align: left !important;
+    margin: 2.5em 0 1em 0;
+    page-break-before: always;
+    break-before: page;
+    page-break-after: avoid;
+    break-after: avoid;
+    text-indent: 0 !important;
+}
+
+/* Heading 2: Subcapítulos */
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left !important;
+    margin: 2em 0 0.6em 0;
+    page-break-before: avoid;
+    break-before: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+    text-indent: 0 !important;
+}
+
+/* ==========================================================================
+   Citações (Quote do Word)
+   ========================================================================== */
+blockquote {
+    margin: 1.5em 2em;
+    padding-left: 1em;
+    border-left: 2px solid #aaa;
+    font-style: italic;
+}
+
+blockquote p {
+    text-indent: 0 !important;
+    margin-bottom: 0.5em !important;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   Imagens Responsivas
+   ========================================================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+}
+
+/* Legendas de Figuras */
+figcaption, p.caption {
+    font-size: 0.85em;
+    text-align: center !important;
+    font-style: italic;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em !important;
+    text-indent: 0 !important;
+}

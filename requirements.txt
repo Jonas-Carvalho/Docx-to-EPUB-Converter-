@@ -1,0 +1,7 @@
+flask>=3.0.0
+pywebview>=5.0.0
+pyphen>=0.14.0
+werkzeug>=3.0.0
+nuitka>=2.0.0
+zstandard>=0.22.0
+pyinstaller>=6.0.0
