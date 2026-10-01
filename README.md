@@ -49,7 +49,7 @@ Não é necessário instalar Python, configurar dependências ou clonar o projet
 1. Clone o repositório ou baixe o código:
    ```bash
    git clone [https://github.com/Jonas-Carvalho/Docx-to-EPUB-Converter-](https://github.com/Jonas-Carvalho/Docx-to-EPUB-Converter-)
-   cd SEU_REPOSITORIO
+   cd Docx-to-EPUB-Converter-
    ```
 
 2. Crie e ative um ambiente virtual isolado (**obrigatório** para evitar conflitos com pacotes globais ou Anaconda):
