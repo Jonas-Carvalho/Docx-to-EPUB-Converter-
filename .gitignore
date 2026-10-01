@@ -1,0 +1,33 @@
+# Ambientes virtuais
+venv*/
+env*/
+ENV/
+.venv/
+
+# Caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Saídas do PyInstaller
+build/
+dist/
+*.spec
+
+# Saídas do Nuitka
+*.build/
+*.dist/
+dist_nuitka/
+
+# Arquivos de log e testes locais
+*.log
+*.epub
+media/
+content.md
+content_hyphenated.md
+
+# Arquivos de IDEs / SO
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
