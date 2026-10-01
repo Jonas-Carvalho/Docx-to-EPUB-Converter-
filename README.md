@@ -48,7 +48,7 @@ Não é necessário instalar Python, configurar dependências ou clonar o projet
 
 1. Clone o repositório ou baixe o código:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+   git clone [https://github.com/Jonas-Carvalho/Docx-to-EPUB-Converter-](https://github.com/Jonas-Carvalho/Docx-to-EPUB-Converter-)
    cd SEU_REPOSITORIO
    ```
 
